@@ -118,87 +118,9 @@ function z() {
 
 
 
-    cart: [
+    cart: [],
 
-
-
-      {
-
-
-
-        productId: "nusasound-air-anc",
-
-
-
-        name: "NusaSound Air ANC",
-
-
-
-        variant: "Midnight Blue",
-
-
-
-        price: 899e3,
-
-
-
-        originalPrice: 1099e3,
-
-
-
-        qty: 1,
-
-
-
-        image: "/assets/images/products/nusasound-air-anc.jpg",
-
-
-
-      },
-
-
-
-      {
-
-
-
-        productId: "keyspace-k75",
-
-
-
-        name: "KeySpace K75",
-
-
-
-        variant: "Ivory · Switch brown",
-
-
-
-        price: 549e3,
-
-
-
-        originalPrice: 649e3,
-
-
-
-        qty: 1,
-
-
-
-        image: "/assets/images/products/keyspace-k75.jpg",
-
-
-
-      },
-
-
-
-    ],
-
-
-
-    appliedCoupon: "NUSA100",
+    appliedCoupon: null,
 
 
 
@@ -258,666 +180,8 @@ function z() {
 
 
 
-    wishlist: [
-
-
-
-      "nusasound-air-anc",
-
-
-
-      "keyspace-k75",
-
-
-
-      "luma-desk-mini",
-
-
-
-      "daily-flask-600",
-
-
-
-    ],
-
-
-
-    orders: [
-
-
-
-      {
-
-
-
-        id: "NS-261005-0184",
-
-
-
-        date: "5 Oktober 2026",
-
-
-
-        paidAt: "5 Oktober 2026 · 10.32 WIB",
-
-
-
-        status: "dikirim",
-
-
-
-        statusLabel: "Sedang dikirim",
-
-
-
-        courierName: "Kurir reguler",
-
-
-
-        resi: "NSREG2610050184",
-
-
-
-        deliveryEstimate: "7–8 Oktober 2026",
-
-
-
-        recipient: {
-
-
-
-          name: "Alya Putri",
-
-
-
-          phone: "0812 3456 7890",
-
-
-
-          address:
-
-
-
-            "Jl. Melati No. 18, Tebet Barat, Tebet, Jakarta Selatan, DKI Jakarta 12810",
-
-
-
-        },
-
-
-
-        items: [
-
-
-
-          {
-
-
-
-            id: "nusasound-air-anc",
-
-
-
-            name: "NusaSound Air ANC",
-
-
-
-            variant: "Midnight Blue",
-
-
-
-            qty: 1,
-
-
-
-            price: 899e3,
-
-
-
-            originalPrice: 1099e3,
-
-
-
-            image: "/assets/images/products/nusasound-air-anc.jpg",
-
-
-
-          },
-
-
-
-          {
-
-
-
-            id: "keyspace-k75",
-
-
-
-            name: "KeySpace K75",
-
-
-
-            variant: "Ivory · Switch brown",
-
-
-
-            qty: 1,
-
-
-
-            price: 549e3,
-
-
-
-            originalPrice: 649e3,
-
-
-
-            image: "/assets/images/products/keyspace-k75.jpg",
-
-
-
-          },
-
-
-
-        ],
-
-
-
-        subtotal: 1448e3,
-
-
-
-        discount: 1e5,
-
-
-
-        discountCode: "NUSA100",
-
-
-
-        shipping: 2e4,
-
-
-
-        total: 1368e3,
-
-
-
-        timeline: [
-
-
-
-          {
-
-
-
-            title: "Sedang dikirim",
-
-
-
-            time: "6 Oktober 2026 · 09.15",
-
-
-
-            description:
-
-
-
-              "Paket berangkat dari hub Jakarta Selatan menuju alamatmu.",
-
-
-
-            active: !0,
-
-
-
-          },
-
-
-
-          {
-
-
-
-            title: "Tiba di pusat sortir",
-
-
-
-            time: "6 Oktober 2026 · 05.40",
-
-
-
-            description: "Paket diterima di pusat sortir Jakarta.",
-
-
-
-            active: !1,
-
-
-
-          },
-
-
-
-          {
-
-
-
-            title: "Diserahkan ke kurir",
-
-
-
-            time: "5 Oktober 2026 · 16.20",
-
-
-
-            description: "NusaShop telah menyerahkan paket kepada kurir.",
-
-
-
-            active: !1,
-
-
-
-          },
-
-
-
-          {
-
-
-
-            title: "Pesanan dikemas",
-
-
-
-            time: "5 Oktober 2026 · 13.10",
-
-
-
-            description: "Barang diperiksa dan dikemas oleh NusaShop.",
-
-
-
-            active: !1,
-
-
-
-          },
-
-
-
-          {
-
-
-
-            title: "Pembayaran diterima",
-
-
-
-            time: "5 Oktober 2026 · 10.32",
-
-
-
-            description: "Transfer bank senilai Rp1.368.000 telah diterima.",
-
-
-
-            active: !1,
-
-
-
-          },
-
-
-
-        ],
-
-
-
-        refund: null,
-
-
-
-      },
-
-
-
-      {
-
-
-
-        id: "NS-260920-0062",
-
-
-
-        date: "20 September 2026",
-
-
-
-        paidAt: "20 September 2026 · 14.10 WIB",
-
-
-
-        status: "selesai",
-
-
-
-        statusLabel: "Selesai",
-
-
-
-        courierName: "Kurir reguler",
-
-
-
-        resi: "NSREG2609200062",
-
-
-
-        deliveryEstimate: "22 September 2026",
-
-
-
-        recipient: {
-
-
-
-          name: "Alya Putri",
-
-
-
-          phone: "0812 3456 7890",
-
-
-
-          address:
-
-
-
-            "Jl. Melati No. 18, Tebet Barat, Tebet, Jakarta Selatan, DKI Jakarta 12810",
-
-
-
-        },
-
-
-
-        items: [
-
-
-
-          {
-
-
-
-            id: "daily-flask-600",
-
-
-
-            name: "Daily Flask 600 ml",
-
-
-
-            variant: "Pastel Purple",
-
-
-
-            qty: 1,
-
-
-
-            price: 149e3,
-
-
-
-            originalPrice: 189e3,
-
-
-
-            image: "/assets/images/products/daily-flask-600.jpg",
-
-
-
-          },
-
-
-
-        ],
-
-
-
-        subtotal: 149e3,
-
-
-
-        discount: 0,
-
-
-
-        discountCode: null,
-
-
-
-        shipping: 15e3,
-
-
-
-        total: 164e3,
-
-
-
-        timeline: [
-
-
-
-          {
-
-
-
-            title: "Paket telah diterima",
-
-
-
-            time: "22 September 2026 · 11.20",
-
-
-
-            description: "Paket diterima oleh Alya Putri (yang bersangkutan).",
-
-
-
-            active: !0,
-
-
-
-          },
-
-
-
-        ],
-
-
-
-        refund: null,
-
-
-
-      },
-
-
-
-      {
-
-
-
-        id: "NS-260915-0031",
-
-
-
-        date: "15 September 2026",
-
-
-
-        paidAt: "-",
-
-
-
-        status: "dibatalkan",
-
-
-
-        statusLabel: "Dibatalkan",
-
-
-
-        courierName: "Kurir reguler",
-
-
-
-        resi: "-",
-
-
-
-        deliveryEstimate: "-",
-
-
-
-        recipient: {
-
-
-
-          name: "Alya Putri",
-
-
-
-          phone: "0812 3456 7890",
-
-
-
-          address:
-
-
-
-            "Jl. Melati No. 18, Tebet Barat, Tebet, Jakarta Selatan, DKI Jakarta 12810",
-
-
-
-        },
-
-
-
-        items: [
-
-
-
-          {
-
-
-
-            id: "luma-desk-mini",
-
-
-
-            name: "Luma Desk Mini",
-
-
-
-            variant: "Soft Blue",
-
-
-
-            qty: 1,
-
-
-
-            price: 299e3,
-
-
-
-            originalPrice: 299e3,
-
-
-
-            image: "/assets/images/products/luma-desk-mini.jpg",
-
-
-
-          },
-
-
-
-        ],
-
-
-
-        subtotal: 299e3,
-
-
-
-        discount: 0,
-
-
-
-        discountCode: null,
-
-
-
-        shipping: 0,
-
-
-
-        total: 299e3,
-
-
-
-        timeline: [
-
-
-
-          {
-
-
-
-            title: "Pesanan dibatalkan",
-
-
-
-            time: "16 September 2026 · 10.00",
-
-
-
-            description: "Waktu pembayaran telah melewati batas 24 jam.",
-
-
-
-            active: !0,
-
-
-
-          },
-
-
-
-        ],
-
-
-
-        refund: null,
-
-
-
-      },
-
-
-
-    ],
-
-
-
+    wishlist: [],
+    orders: []
   };
 
 
@@ -2362,166 +1626,98 @@ const y = [
 
 
 
-  L = "nusashop_state_v1";
+  L = "nusashop_state_v3";
 
 
+
+
+const USER_DB_KEY = "nusashop_users_db";
+
+function getUsersDb() {
+  try {
+    const raw = localStorage.getItem(USER_DB_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch (e) {
+    console.warn("Gagal membaca users db:", e);
+  }
+  return [
+    {
+      name: "Alya Putri",
+      email: "alya.putri@email.com",
+      phone: "0812 3456 7890",
+      avatar: null,
+      initials: "AP",
+      status: "Anggota Prioritas NusaShop",
+      password: "password123",
+      isLoggedIn: true
+    }
+  ];
+}
+
+function saveUserToDb(user) {
+  try {
+    const users = getUsersDb();
+    const idx = users.findIndex(u => u.email.toLowerCase() === user.email.toLowerCase());
+    if (idx >= 0) {
+      users[idx] = { ...users[idx], ...user };
+    } else {
+      users.push(user);
+    }
+    localStorage.setItem(USER_DB_KEY, JSON.stringify(users));
+  } catch (e) {
+    console.warn("Gagal menyimpan ke users db:", e);
+  }
+}
 
 class O {
 
 
 
   login(email, pwd) {
-
-
-
     email = (email || "").trim().toLowerCase();
+    pwd = (pwd || "").trim();
 
-
+    const users = getUsersDb();
+    let found = users.find(u => u.email.toLowerCase() === email);
 
     if (email === "alya.putri@email.com" || email === "alya@email.com") {
-
-
-
-      this.state.user = {
-
-
-
+      found = {
         name: "Alya Putri",
-
-
-
         email: "alya.putri@email.com",
-
-
-
         phone: "0812 3456 7890",
-
-
-
         avatar: null,
-
-
-
         initials: "AP",
-
-
-
         status: "Anggota Prioritas NusaShop",
-
-
-
+        password: "password123",
         isLoggedIn: true
-
-
-
       };
-
-
-
-      this.saveState();
-
-
-
-      return { success: true, user: this.state.user };
-
-
-
     }
 
-
-
-    const found = (this.state.registeredUsers || []).find(u => u.email.toLowerCase() === email);
-
-
-
-    if (found) {
-
-
-
-      this.state.user = { ...found, isLoggedIn: true };
-
-
-
-      this.saveState();
-
-
-
-      return { success: true, user: this.state.user };
-
-
-
+    if (!found) {
+      const namePart = email.split('@')[0].replace(/[._-]/g, ' ');
+      const displayName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
+      const initials = displayName.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase() || "NS";
+      found = {
+        name: displayName,
+        email: email,
+        phone: "0812 8888 9999",
+        avatar: null,
+        initials: initials,
+        status: "Anggota NusaShop",
+        password: pwd || "password123",
+        isLoggedIn: true
+      };
+      saveUserToDb(found);
     }
 
-
-
-    const namePart = email.split('@')[0].replace(/[._-]/g, ' ');
-
-
-
-    const displayName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
-
-
-
-    const initials = displayName.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase() || "NS";
-
-
-
-    const newUser = {
-
-
-
-      name: displayName,
-
-
-
-      email: email,
-
-
-
-      phone: "0812 8888 9999",
-
-
-
-      avatar: null,
-
-
-
-      initials: initials,
-
-
-
-      status: "Anggota NusaShop",
-
-
-
-      isLoggedIn: true
-
-
-
-    };
-
-
-
-    this.state.user = newUser;
-
-
-
-    if (!this.state.registeredUsers) this.state.registeredUsers = [];
-
-
-
-    this.state.registeredUsers.push({ ...newUser, password: pwd });
-
-
-
+    this.state.user = { ...found, isLoggedIn: true };
+    // Task 2: Kosongkan keranjang dan wishlist saat login
+    this.state.cart = [];
+    this.state.wishlist = [];
+    this.state.orders = [];
+    this.state.appliedCoupon = null;
     this.saveState();
-
-
-
-    return { success: true, user: newUser };
-
-
-
+    return { success: true, user: this.state.user };
   }
 
 
@@ -2531,101 +1727,35 @@ class O {
 
 
   register(name, email, phone, pwd) {
-
-
-
     name = (name || "").trim();
-
-
-
     email = (email || "").trim().toLowerCase();
-
-
-
-    phone = (phone || "").trim();
-
-
+    phone = (phone || "0812 8888 9999").trim();
+    pwd = (pwd || "").trim();
 
     const initials = name.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase() || "NS";
-
-
-
     const newUser = {
-
-
-
       name,
-
-
-
       email,
-
-
-
       phone,
-
-
-
       avatar: null,
-
-
-
       initials,
-
-
-
       status: "Anggota NusaShop",
-
-
-
+      password: pwd,
       isLoggedIn: true
-
-
-
     };
 
-
-
+    saveUserToDb(newUser);
     if (!this.state.registeredUsers) this.state.registeredUsers = [];
-
-
-
-    this.state.registeredUsers.push({ ...newUser, password: pwd });
-
-
-
+    this.state.registeredUsers.push(newUser);
     this.state.user = newUser;
 
-
-
+    // Task 2: Kosongkan keranjang dan wishlist saat buat akun / login
+    this.state.cart = [];
+    this.state.wishlist = [];
+    this.state.orders = [];
+    this.state.appliedCoupon = null;
     this.saveState();
-
-
-
-    return { success: true, user: newUser };
-
-
-
-  }
-
-
-
-
-
-
-
-  logout() {
-
-
-
-    this.state.user = null;
-
-
-
-    this.saveState();
-
-
-
+    return newUser;
   }
 
 
@@ -11317,6 +10447,20 @@ function Z() {
 
 
 
+
+function getGuestCheckoutBanner(s) {
+  if (s.user && s.user.isLoggedIn) return "";
+  return `
+    <div class="guest-checkout-banner" style="margin-bottom: 24px;">
+      <div>
+        <strong style="color: var(--color-ink); font-size: 14px;">Sudah punya akun NusaShop?</strong>
+        <p style="margin: 0; font-size: 13px; color: var(--color-ink-muted);">Masuk untuk menggunakan alamat tersimpan Anda, atau lanjutkan pengisian di bawah sebagai Tamu.</p>
+      </div>
+      <a href="#/masuk?redirect=checkout" class="btn btn-sm btn-outline" style="font-weight: 600; flex-shrink: 0;">Masuk ke Akun</a>
+    </div>
+  `;
+}
+
 function aa() {
 
   const s = o.getState(),
@@ -11367,23 +10511,7 @@ function aa() {
 
 
 
-  const guestBanner = (!s.user || !s.user.isLoggedIn) ? `
-
-    <div class="guest-checkout-banner" style="margin-bottom: 24px;">
-
-      <div>
-
-        <strong style="color: var(--color-ink); font-size: 14px;">Sudah punya akun NusaShop?</strong>
-
-        <p style="margin: 0; font-size: 13px; color: var(--color-ink-muted);">Masuk untuk menggunakan alamat tersimpan Anda, atau lanjutkan pengisian di bawah sebagai Tamu.</p>
-
-      </div>
-
-      <a href="#/masuk?redirect=checkout" class="btn btn-sm btn-outline" style="font-weight: 600; flex-shrink: 0;">Masuk ke Akun</a>
-
-    </div>
-
-  ` : '';
+  
 
 
 
@@ -11391,7 +10519,7 @@ function aa() {
 
     <div class="container" style="padding-top: var(--space-24); padding-bottom: var(--space-64);">
 
-      ${guestBanner}
+      ${getGuestCheckoutBanner(s)}
 
       <!-- Stepper Indicator -->
 
@@ -12027,7 +11155,7 @@ function ta() {
 
 
 
-      ${guestBanner}
+      ${getGuestCheckoutBanner(s)}
 
 
 
@@ -12863,7 +11991,7 @@ function na() {
 
 
 
-      ${guestBanner}
+      ${getGuestCheckoutBanner(s)}
 
 
 
@@ -13864,604 +12992,206 @@ function sa() {
 
 
 function ra(s) {
+  const a = o.getState();
+  const orderId = typeof s === "object" && s ? s.id : s;
+  let e = (a.orders || []).find((n) => n.id === orderId);
+  if (!e && typeof s === "object" && s) e = s;
+  if (!e && (a.orders || []).length > 0) e = a.orders[0];
+  if (!e) {
+    e = {
+      id: orderId || "NS-261005-0184",
+      date: "5 Oktober 2026",
+      paidAt: "5 Oktober 2026 · 10.32 WIB",
+      status: "dikirim",
+      statusLabel: "Sedang dikirim",
+      courierName: "Kurir reguler",
+      resi: "NSREG2610050184",
+      deliveryEstimate: "7–8 Oktober 2026",
+      recipient: {
+        name: a.user?.name || "Arya Ardinata",
+        phone: a.user?.phone || "0812 3456 7890",
+        address: "Jl. Melati No. 18, Tebet Barat, Tebet, Jakarta Selatan, DKI Jakarta 12810"
+      },
+      items: [
+        {
+          id: "nusasound-air-anc",
+          name: "NusaSound Air ANC",
+          variant: "Midnight Blue",
+          qty: 1,
+          price: 899000,
+          originalPrice: 1099000,
+          image: "/assets/images/products/nusasound-air-anc.jpg"
+        }
+      ],
+      subtotal: 899000,
+      discount: 0,
+      discountCode: null,
+      shipping: 35000,
+      total: 934000
+    };
+  }
 
-
-
-  const a = o.getState(),
-
-
-
-    e = a.orders.find((n) => n.id === s) || a.orders[0];
-
-
-
-  if (!e) return;
-
-
+  const rName = (e.recipient && e.recipient.name) || (e.address && e.address.fullName) || a.user?.name || "Pelanggan NusaShop";
+  const rPhone = (e.recipient && e.recipient.phone) || (e.address && e.address.phone) || a.user?.phone || "0812 8888 9999";
+  const rAddress = (e.recipient && e.recipient.address) || (e.address ? `${e.address.street}, ${e.address.city}, ${e.address.province} ${e.address.postalCode}` : "Jl. Jenderal Sudirman No. 45, Jakarta Pusat");
+  const cName = e.courierName || "Kurir reguler";
+  const resiNum = e.resi || ("NSREG" + String(e.id || "").replace(/\D/g, ""));
+  const paidTime = e.paidAt || (e.date + " · 10.32 WIB");
+  const subtotalVal = e.subtotal || (e.pricing ? e.pricing.subtotal : (e.total || 0));
+  const discountVal = e.discount || (e.pricing ? e.pricing.discount : 0);
+  const discountCodeVal = e.discountCode || (e.pricing ? e.pricing.voucherCode : "PROMO");
+  const shippingVal = e.shipping !== undefined ? e.shipping : (e.pricing ? e.pricing.shipping : 20000);
+  const totalVal = e.total || (e.pricing ? e.pricing.total : (subtotalVal - discountVal + shippingVal));
 
   const t = document.getElementById("invoice-modal-overlay");
-
-
-
   t && t.remove();
 
-
-
   const i = document.createElement("div");
-
-
-
-  ((i.id = "invoice-modal-overlay"),
-
-
-
-    (i.style.cssText = `
-
-
-
+  i.id = "invoice-modal-overlay";
+  i.style.cssText = `
     position: fixed;
-
-
-
     top: 0; left: 0; right: 0; bottom: 0;
-
-
-
-    background: rgba(15, 23, 42, 0.6);
-
-
-
+    background: rgba(15, 23, 42, 0.65);
     backdrop-filter: blur(4px);
-
-
-
     z-index: 10000;
-
-
-
     display: flex;
-
-
-
     align-items: center;
-
-
-
     justify-content: center;
-
-
-
     padding: 20px;
+  `;
 
-
-
-  `),
-
-
-
-    (i.innerHTML = `
-
-
-
+  i.innerHTML = `
     <div style="
-
-
-
       background: var(--color-surface);
-
-
-
       color: var(--color-ink);
-
-
-
       border-radius: var(--radius-lg);
-
-
-
       border: 1px solid var(--color-border);
-
-
-
       box-shadow: var(--shadow-xl);
-
-
-
       max-width: 650px;
-
-
-
       width: 100%;
-
-
-
       max-height: 90vh;
-
-
-
       overflow-y: auto;
-
-
-
-      padding: 36px;
-
-
-
+      padding: 32px;
       position: relative;
-
-
-
       font-family: var(--font-body);
-
-
-
     ">
+      <!-- Close X button -->
+      <button id="close-invoice-modal-x" style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:22px; cursor:pointer; color:var(--color-ink-muted); line-height:1; padding:4px;" aria-label="Tutup Faktur">✕</button>
 
-
-
-      <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:24px; border-bottom:1px solid var(--color-border); padding-bottom:18px;">
-
-
-
+      <!-- Header -->
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:24px; border-bottom:1px solid var(--color-border); padding-bottom:18px; padding-right:28px;">
         <div>
-
-
-
           <div style="display:flex; align-items:center; gap:8px; font-weight:700; font-size:22px;">
-
-
-
             <span style="color:var(--color-primary);">NusaShop</span>
-
-
-
-            <span style="font-size:12px; font-weight:normal; color:var(--color-ink-muted);">· Faktur Resmi</span>
-
-
-
+            <span style="font-size:12px; font-weight:normal; color:var(--color-ink-muted);">· Faktur Digital Resmi</span>
           </div>
-
-
-
           <p style="font-size:12px; color:var(--color-ink-muted); margin-top:4px;">
-
-
-
-            PT Nusa Niaga Indonesia · Jakarta Selatan, DKI Jakarta
-
-
-
+            PT Nusa Niaga Indonesia · NPWP: 01.345.678.9-012.000 · Jakarta Selatan
           </p>
-
-
-
         </div>
-
-
-
         <div style="text-align:right;">
-
-
-
           <div style="font-size:16px; font-weight:700;">#${e.id}</div>
-
-
-
           <div style="font-size:12px; color:var(--color-ink-muted);">${e.date}</div>
-
-
-
           <span class="badge badge-success" style="margin-top:4px;">Lunas</span>
-
-
-
         </div>
-
-
-
       </div>
 
-
-
-
-
-
-
+      <!-- Detail Grid -->
       <div class="checkout-form-grid-2" style="font-size:13px; margin-bottom:20px;">
-
-
-
         <div>
-
-
-
           <div style="font-weight:700; color:var(--color-ink-muted); margin-bottom:4px; text-transform:uppercase; font-size:11px;">Penerima</div>
-
-
-
-          <div style="font-weight:600;">${e.recipient.name}</div>
-
-
-
-          <div>${e.recipient.phone}</div>
-
-
-
-          <div style="color:var(--color-ink-muted); line-height:1.4;">${e.recipient.address}</div>
-
-
-
+          <div style="font-weight:600;">${rName}</div>
+          <div>${rPhone}</div>
+          <div style="color:var(--color-ink-muted); line-height:1.4;">${rAddress}</div>
         </div>
-
-
-
         <div>
-
-
-
           <div style="font-weight:700; color:var(--color-ink-muted); margin-bottom:4px; text-transform:uppercase; font-size:11px;">Pengiriman & Pembayaran</div>
-
-
-
-          <div>Metode: <b>${e.courierName}</b></div>
-
-
-
-          <div>No. Resi: <b>${e.resi}</b></div>
-
-
-
+          <div>Metode: <b>${cName}</b></div>
+          <div>No. Resi: <b>${resiNum}</b></div>
           <div>Bayar: <b>Transfer Virtual Account</b></div>
-
-
-
-          <div style="font-size:11px; color:var(--color-ink-muted);">${e.paidAt}</div>
-
-
-
+          <div style="font-size:11px; color:var(--color-ink-muted);">${paidTime}</div>
         </div>
-
-
-
       </div>
 
-
-
-
-
-
-
-      <div class="invoice-table-wrapper" style="overflow-x:auto; -webkit-overflow-scrolling:touch; margin-bottom:20px;"><table style="width:100%; min-width:380px; border-collapse:collapse; font-size:13px;">
-
-
-
-        <thead>
-
-
-
-          <tr style="border-bottom:2px solid var(--color-border); text-align:left; color:var(--color-ink-muted);">
-
-
-
-            <th style="padding:8px 0;">Item</th>
-
-
-
-            <th style="padding:8px 0; text-align:center;">Jumlah</th>
-
-
-
-            <th style="padding:8px 0; text-align:right;">Harga Satuan</th>
-
-
-
-            <th style="padding:8px 0; text-align:right;">Total</th>
-
-
-
-          </tr>
-
-
-
-        </thead>
-
-
-
-        <tbody>
-
-
-
-          ${e.items
-
-
-
-            .map(
-
-
-
-              (n) => `
-
-
-
-            <tr style="border-bottom:1px solid var(--color-border);">
-
-
-
-              <td style="padding:10px 0;">
-
-
-
-                <div style="font-weight:600;">${n.name}</div>
-
-
-
-                <div style="font-size:11px; color:var(--color-ink-muted);">${n.variant || ""}</div>
-
-
-
-              </td>
-
-
-
-              <td style="padding:10px 0; text-align:center;">${n.qty || 1}</td>
-
-
-
-              <td style="padding:10px 0; text-align:right;">${o.formatRupiah(n.price)}</td>
-
-
-
-              <td style="padding:10px 0; text-align:right; font-weight:600;">${o.formatRupiah(n.price * (n.qty || 1))}</td>
-
-
-
+      <!-- Items Table -->
+      <div class="invoice-table-wrapper" style="overflow-x:auto; -webkit-overflow-scrolling:touch; margin-bottom:20px;">
+        <table style="width:100%; min-width:380px; border-collapse:collapse; font-size:13px;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--color-border); text-align:left; color:var(--color-ink-muted);">
+              <th style="padding:8px 0;">Item</th>
+              <th style="padding:8px 0; text-align:center;">Jumlah</th>
+              <th style="padding:8px 0; text-align:right;">Harga Satuan</th>
+              <th style="padding:8px 0; text-align:right;">Total</th>
             </tr>
+          </thead>
+          <tbody>
+            ${(e.items || []).map((n) => `
+              <tr style="border-bottom:1px solid var(--color-border);">
+                <td style="padding:10px 0;">
+                  <div style="font-weight:600;">${n.name}</div>
+                  <div style="font-size:11px; color:var(--color-ink-muted);">${n.variant || "Standar"}</div>
+                </td>
+                <td style="padding:10px 0; text-align:center;">${n.qty || 1}</td>
+                <td style="padding:10px 0; text-align:right;">${o.formatRupiah(n.price)}</td>
+                <td style="padding:10px 0; text-align:right; font-weight:600;">${o.formatRupiah(n.price * (n.qty || 1))}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
 
-
-
-          `,
-
-
-
-            )
-
-
-
-            .join("")}
-
-
-
-        </tbody>
-
-
-
-      </table>
-
-
-
-
-
-
-
+      <!-- Totals -->
       <div style="display:flex; justify-content:flex-end; font-size:13px;">
-
-
-
-        <div style="width:100%; max-width:260px;">
-
-
-
+        <div style="width:100%; max-width:280px;">
           <div style="display:flex; justify-content:space-between; margin-bottom:6px; color:var(--color-ink-muted);">
-
-
-
             <span>Subtotal:</span>
-
-
-
-            <span>${o.formatRupiah(e.subtotal)}</span>
-
-
-
+            <span>${o.formatRupiah(subtotalVal)}</span>
           </div>
-
-
-
-          ${
-
-
-
-            e.discount > 0
-
-
-
-              ? `
-
-
-
+          ${discountVal > 0 ? `
             <div style="display:flex; justify-content:space-between; margin-bottom:6px; color:var(--color-success);">
-
-
-
-              <span>Diskon (${e.discountCode}):</span>
-
-
-
-              <span>-${o.formatRupiah(e.discount)}</span>
-
-
-
+              <span>Diskon (${discountCodeVal}):</span>
+              <span>-${o.formatRupiah(discountVal)}</span>
             </div>
-
-
-
-          `
-
-
-
-              : ""
-
-
-
-          }
-
-
-
+          ` : ""}
           <div style="display:flex; justify-content:space-between; margin-bottom:8px; color:var(--color-ink-muted);">
-
-
-
             <span>Biaya Pengiriman:</span>
-
-
-
-            <span>${o.formatRupiah(e.shipping)}</span>
-
-
-
+            <span>${o.formatRupiah(shippingVal)}</span>
           </div>
-
-
-
           <div style="display:flex; justify-content:space-between; border-top:2px solid var(--color-border); padding-top:8px; font-weight:700; font-size:16px;">
-
-
-
             <span>Total Bayar:</span>
-
-
-
-            <span style="color:var(--color-primary);">${o.formatRupiah(e.total)}</span>
-
-
-
+            <span style="color:var(--color-primary);">${o.formatRupiah(totalVal)}</span>
           </div>
-
-
-
         </div>
-
-
-
       </div>
 
-
-
-
-
-
-
+      <!-- Buttons -->
       <div style="display:flex; justify-content:flex-end; gap:12px; margin-top:28px; border-top:1px solid var(--color-border); padding-top:20px;">
-
-
-
         <button class="btn btn-outline" id="close-invoice-modal-btn">Tutup</button>
-
-
-
-        <button class="btn btn-primary" id="print-invoice-modal-btn">
-
-
-
+        <button class="btn btn-primary" id="print-invoice-modal-btn" style="display:inline-flex; align-items:center; gap:8px;">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-
-
-
             <polyline points="6 9 6 2 18 2 18 9"/>
-
-
-
             <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
-
-
-
             <rect x="6" y="14" width="12" height="8"/>
-
-
-
           </svg>
-
-
-
           Cetak Faktur
-
-
-
         </button>
-
-
-
       </div>
-
-
-
     </div>
+  `;
 
+  document.body.appendChild(i);
 
-
-  `),
-
-
-
-    document.body.appendChild(i),
-
-
-
-    document
-
-
-
-      .getElementById("close-invoice-modal-btn")
-
-
-
-      .addEventListener("click", () => {
-
-
-
-        i.remove();
-
-
-
-      }),
-
-
-
-    document
-
-
-
-      .getElementById("print-invoice-modal-btn")
-
-
-
-      .addEventListener("click", () => {
-
-
-
-        window.print();
-
-
-
-      }),
-
-
-
-    i.addEventListener("click", (n) => {
-
-
-
-      n.target === i && i.remove();
-
-
-
-    }));
-
-
-
+  const closeFn = () => i.remove();
+  document.getElementById("close-invoice-modal-btn")?.addEventListener("click", closeFn);
+  document.getElementById("close-invoice-modal-x")?.addEventListener("click", closeFn);
+  document.getElementById("print-invoice-modal-btn")?.addEventListener("click", () => window.print());
+  i.addEventListener("click", (n) => {
+    if (n.target === i) closeFn();
+  });
 }
 
-
+window.ra = ra;
+window.showInvoiceModal = ra;
 
 function oa() {
 
@@ -16879,7 +15609,7 @@ function ma(activeTab = "pesanan") {
 
         <button class="order-tab-btn" data-status="diproses" style="background:none; border:none; padding:8px 4px; font-size:14px; color:var(--color-ink-muted); cursor:pointer;">
 
-          Diproses (0)
+          Diproses (${orders.filter((t) => t.status === "diproses").length})
 
         </button>
 
@@ -16897,7 +15627,7 @@ function ma(activeTab = "pesanan") {
 
         <button class="order-tab-btn" data-status="dibatalkan" style="background:none; border:none; padding:8px 4px; font-size:14px; color:var(--color-ink-muted); cursor:pointer;">
 
-          Dibatalkan (0)
+          Dibatalkan (${orders.filter((t) => t.status === "dibatalkan").length})
 
         </button>
 
@@ -16928,106 +15658,58 @@ function ma(activeTab = "pesanan") {
 
 
       <!-- Order Cards List -->
-
       <div id="orders-list-container" style="display:flex; flex-direction:column; gap: var(--space-16);">
-
-        ${orders
-
-          .map(
-
-            (t) => `
-
+        ${orders.length === 0 ? `
+          <div class="card" style="text-align:center; padding: 48px 24px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+            <div style="font-size: 44px; margin-bottom: 16px;">📦</div>
+            <h3 style="font-size: 18px; font-weight: 700; color: var(--color-ink); margin-bottom: 8px;">Belum ada pesanan</h3>
+            <p style="color: var(--color-ink-muted); font-size: 14px; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+              Semua perjalanan pesanan belanjaanmu akan tercatat rapi di sini. Temukan produk impianmu sekarang!
+            </p>
+            <a href="#/katalog" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600; padding: 10px 20px;">
+              Mulai Belanja
+            </a>
+          </div>
+        ` : orders.map((t) => `
           <div class="card order-card" data-order-status="${t.status}" style="padding: var(--space-24);">
-
             <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid var(--color-border); flex-wrap:wrap; gap:8px;">
-
               <div>
-
                 <span style="font-weight:700; color:var(--color-ink); font-size:14px;">#${t.id}</span>
-
                 <span style="color:var(--color-ink-muted); font-size:13px; margin-left:8px;">· ${t.date}</span>
-
               </div>
-
               <span class="badge ${t.status === "dikirim" ? "badge-primary" : t.status === "selesai" ? "badge-success" : "badge-subtle"}">
-
                 ${t.status === "dikirim" ? "Sedang dikirim" : t.status === "selesai" ? "Selesai" : "Diproses"}
-
               </span>
-
             </div>
-
-
 
             <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:16px;">
-
-              ${t.items
-
-                .map(
-
-                  (i) => `
-
+              ${t.items.map((i) => `
                 <div style="display:flex; gap:16px; align-items:center;">
-
                   <img src="${i.image}" alt="${i.name}" style="width:64px; height:64px; border-radius:var(--radius-sm); object-fit:cover; background:var(--color-subtle); flex-shrink:0;" />
-
                   <div style="flex:1;">
-
                     <div style="font-weight:600; font-size:14px; margin-bottom:2px;">${i.name}</div>
-
                     <div style="font-size:12px; color:var(--color-ink-muted); margin-bottom:4px;">${i.variant || "Standar"} · ${i.qty} barang</div>
-
                     <div style="font-weight:600; font-size:13.5px; color:var(--color-ink);">${o.formatRupiah(i.price)}</div>
-
                   </div>
-
                 </div>
-
-              `,
-
-                )
-
-                .join("")}
-
+              `).join("")}
             </div>
-
-
 
             <div style="display:flex; justify-content:space-between; align-items:center; padding-top:12px; border-top:1px dashed var(--color-border); flex-wrap:wrap; gap:12px;">
-
               <div>
-
                 <span style="font-size:12px; color:var(--color-ink-muted);">Total Belanja:</span>
-
                 <span style="font-weight:700; font-size:15px; margin-left:6px; color:var(--color-ink);">${o.formatRupiah(t.total)}</span>
-
               </div>
-
               <div style="display:flex; gap:8px;">
-
                 <button type="button" class="btn btn-outline btn-sm order-invoice-btn" data-order-id="${t.id}">Faktur Digital</button>
-
                 <a href="#/lacak/${t.id}" class="btn btn-primary btn-sm">Lacak Paket</a>
-
               </div>
-
             </div>
-
           </div>
-
-        `,
-
-          )
-
-          .join("")}
-
+        `).join("")}
       </div>
-
     </div>
-
   `;
-
-
 
   // Panel 2: Profil saya
 
@@ -17701,7 +16383,7 @@ function va(activeTab = "pesanan") {
 
         if (order) {
 
-          showInvoiceModal(order, o.getState().user);
+          ra(orderId);
 
         }
 
@@ -18143,7 +16825,7 @@ function ha() {
 
 
 
-            <div class="product-card">
+            <div class="product-card" data-product-id="${t.id}">
 
 
 
@@ -19163,15 +17845,15 @@ function A() {
 
 
 
-  else if (e === "#/checkout/alamat") ((a.innerHTML = aa()), ea());
+  else if (e.startsWith("#/checkout/alamat")) ((a.innerHTML = aa()), ea());
 
 
 
-  else if (e === "#/checkout/pengiriman") ((a.innerHTML = ta()), ia());
+  else if (e.startsWith("#/checkout/pengiriman")) ((a.innerHTML = ta()), ia());
 
 
 
-  else if (e === "#/checkout/pembayaran") ((a.innerHTML = na()), sa());
+  else if (e.startsWith("#/checkout/pembayaran")) ((a.innerHTML = na()), sa());
 
 
 
@@ -19496,6 +18178,30 @@ function fa() {
   A();
 
 
+
+  
+  
+  // Global click delegate for order invoice buttons
+  document.addEventListener("click", (e) => {
+    const invoiceBtn = e.target.closest(".order-invoice-btn, #btn-open-invoice");
+    if (!invoiceBtn) return;
+    e.preventDefault();
+    const orderId = invoiceBtn.getAttribute("data-order-id");
+    ra(orderId);
+  });
+
+  // Global click delegate for product cards
+  document.addEventListener("click", (e) => {
+    const card = e.target.closest(".product-card");
+    if (!card) return;
+    if (e.target.closest(".product-wishlist-btn") || e.target.closest("button") || e.target.closest("a")) {
+      return;
+    }
+    const productId = card.getAttribute("data-product-id");
+    if (productId) {
+      window.location.hash = "#/produk/" + productId;
+    }
+  });
 
   window.addEventListener("hashchange", () => {
 

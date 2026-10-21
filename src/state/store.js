@@ -116,20 +116,10 @@ export function getInitialState() {
       vaNumber: "8277 0812 3456 7890",
       instructions: "Transfer ke nomor Virtual Account BCA melalui BCA Mobile, KlikBCA, atau ATM BCA."
     },
-    cart: [
-      {
-        productId: "keyspace-k75",
-        name: "KeySpace K75 Wireless Keyboard",
-        variant: "Retro Classic Gray",
-        price: 1250000,
-        originalPrice: 1450000,
-        qty: 1,
-        image: "/assets/images/products/keyspace-k75.jpg"
-      }
-    ],
-    wishlist: ["nusasound-air-anc", "daily-flask-600"],
+    cart: [],
+    wishlist: [],
     voucher: null,
-    orders: DEFAULT_ALYA_ORDERS
+    orders: []
   };
 }
 
@@ -203,6 +193,10 @@ export class Store {
       this.state.user = { ...DEMO_USER_ALYA, isLoggedIn: true };
       this.state.addresses = DEFAULT_ALYA_ADDRESSES;
       this.state.selectedAddress = DEFAULT_ALYA_ADDRESSES[0];
+      this.state.cart = [];
+      this.state.wishlist = [];
+      this.state.orders = [];
+      this.state.appliedCoupon = null;
       this.saveState();
       return { success: true, user: this.state.user };
     }
@@ -211,6 +205,9 @@ export class Store {
     const found = (this.state.registeredUsers || []).find(u => u.email.toLowerCase() === email);
     if (found) {
       this.state.user = { ...found, isLoggedIn: true };
+      this.state.cart = [];
+      this.state.wishlist = [];
+      this.state.appliedCoupon = null;
       this.saveState();
       return { success: true, user: this.state.user };
     }
@@ -231,6 +228,9 @@ export class Store {
     };
     
     this.state.user = newUser;
+    this.state.cart = [];
+    this.state.wishlist = [];
+    this.state.appliedCoupon = null;
     if (!this.state.registeredUsers) this.state.registeredUsers = [];
     this.state.registeredUsers.push({ ...newUser, password });
     this.saveState();
@@ -257,6 +257,9 @@ export class Store {
     this.state.registeredUsers.push({ ...newUser, password });
 
     this.state.user = newUser;
+    this.state.cart = [];
+    this.state.wishlist = [];
+    this.state.appliedCoupon = null;
 
     // Create default address
     const defaultAddress = {

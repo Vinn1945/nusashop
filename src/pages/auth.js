@@ -238,8 +238,9 @@ export function renderAuth(mode = 'login', storeInstance = null) {
                 </div>
               </div>
 
-              <label class="checkbox-label" style="font-size:12.5px; color:var(--color-ink-muted); align-items:flex-start; margin-top:2px;">
-                <input type="checkbox" id="reg-agree" required style="margin-top:3px;" />
+              <label class="checkbox-label" style="font-size:12.5px; color:var(--color-ink-muted); align-items:center; margin-top:4px; cursor:pointer;">
+                <input type="checkbox" id="reg-agree" checked />
+                <span class="checkbox-custom">✓</span>
                 <span>Saya setuju dengan <a href="#/syarat" style="color:var(--color-primary); font-weight:500;">ketentuan</a> dan <a href="#/privasi" style="color:var(--color-primary); font-weight:500;">kebijakan privasi</a></span>
               </label>
 
@@ -360,32 +361,57 @@ export function setupAuthEvents(mode = 'login', storeInstance = null) {
   }
 
   // Submit Register Form
+  const handleRegister = (e) => {
+    if (e) e.preventDefault();
+    const nameInput = document.getElementById('reg-name');
+    const emailInput = document.getElementById('reg-email');
+    const phoneInput = document.getElementById('reg-phone');
+    const pwdInput = document.getElementById('reg-password');
+
+    const name = nameInput ? nameInput.value.trim() : '';
+    const email = emailInput ? emailInput.value.trim() : '';
+    const phone = (phoneInput?.value || '0812 8888 9999').trim();
+    const pwd = pwdInput ? pwdInput.value.trim() : '';
+
+    if (!name) {
+      toast.show({ title: 'Nama Wajib Diisi', message: 'Silakan masukkan nama lengkap Anda.', type: 'error' });
+      nameInput?.focus();
+      return;
+    }
+    if (!email) {
+      toast.show({ title: 'Email Wajib Diisi', message: 'Silakan masukkan alamat email yang valid.', type: 'error' });
+      emailInput?.focus();
+      return;
+    }
+    if (!pwd || pwd.length < 6) {
+      toast.show({ title: 'Kata Sandi Kurang', message: 'Kata sandi minimal 6 karakter.', type: 'error' });
+      pwdInput?.focus();
+      return;
+    }
+
+    const res = activeStore.register(name, email, phone, pwd);
+    toast.show({
+      title: 'Pendaftaran Berhasil!',
+      message: `Selamat datang di NusaShop, ${name}! Akunmu telah berhasil dibuat dan siap digunakan.`,
+      type: 'success'
+    });
+    window.location.hash = '#/akun';
+  };
+
   const regForm = document.getElementById('auth-register-form');
   if (regForm) {
-    regForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('reg-name').value.trim();
-      const email = document.getElementById('reg-email').value.trim();
-      const phone = (document.getElementById('reg-phone')?.value || '0812 8888 9999').trim();
-      const pwd = document.getElementById('reg-password').value.trim();
-      const agree = document.getElementById('reg-agree')?.checked;
-
-      if (!name || !email || !pwd) {
-        toast.show({ title: 'Pendaftaran Gagal', message: 'Semua kolom bertanda wajib harus diisi.', type: 'error' });
+    regForm.addEventListener('submit', handleRegister);
+  }
+  const regSubmitBtn = document.getElementById('reg-submit-btn');
+  if (regSubmitBtn) {
+    regSubmitBtn.addEventListener('click', (e) => {
+      // If form doesn't trigger native submit (e.g. mobile virtual keyboard)
+      const formEl = document.getElementById('auth-register-form');
+      if (formEl && !formEl.checkValidity()) {
+        formEl.reportValidity();
         return;
       }
-      if (!agree) {
-        toast.show({ title: 'Persetujuan Diperlukan', message: 'Harap setujui syarat dan ketentuan NusaShop.', type: 'error' });
-        return;
-      }
-
-      const res = activeStore.register(name, email, phone, pwd);
-      toast.show({
-        title: 'Pendaftaran Berhasil!',
-        message: `Selamat datang di NusaShop, ${name}! Akunmu telah aktif.`,
-        type: 'success'
-      });
-      window.location.hash = '#/akun';
+      handleRegister(e);
     });
   }
 

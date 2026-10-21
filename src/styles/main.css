@@ -1136,6 +1136,7 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   box-shadow: var(--shadow-sm);
+  cursor: pointer;
   transition:
     transform var(--transition-normal),
     box-shadow var(--transition-normal),
