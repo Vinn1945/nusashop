@@ -14067,7 +14067,7 @@ function ra(s) {
 
 
 
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; font-size:13px; margin-bottom:24px;">
+      <div class="checkout-form-grid-2" style="font-size:13px; margin-bottom:20px;">
 
 
 
@@ -14131,7 +14131,7 @@ function ra(s) {
 
 
 
-      <table style="width:100%; border-collapse:collapse; margin-bottom:24px; font-size:13px;">
+      <div class="invoice-table-wrapper" style="overflow-x:auto; -webkit-overflow-scrolling:touch; margin-bottom:20px;"><table style="width:100%; min-width:380px; border-collapse:collapse; font-size:13px;">
 
 
 
@@ -14247,7 +14247,7 @@ function ra(s) {
 
 
 
-        <div style="width:260px;">
+        <div style="width:100%; max-width:260px;">
 
 
 
@@ -14719,7 +14719,7 @@ function oa() {
 
 
 
-            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px; font-size:13px; margin-bottom:24px;">
+            <div class="checkout-form-grid-2" style="font-size:13px; margin-bottom:24px;">
 
 
 
@@ -17159,7 +17159,7 @@ function ma(activeTab = "pesanan") {
 
       ` : `
 
-        <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-20);">
+        <div class="account-wishlist-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-16);">
 
           ${wishlistItems.map(item => `
 
@@ -18547,7 +18547,7 @@ function ya() {
 
 
 
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-16); margin-bottom: var(--space-48);">
+      <div class="help-categories-grid">
 
 
 
@@ -18655,7 +18655,7 @@ function ya() {
 
 
 
-      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: var(--space-32); align-items: start;">
+      <div class="help-content-grid">
 
 
 
